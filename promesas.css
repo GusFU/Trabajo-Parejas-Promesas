@@ -1,140 +1,223 @@
-.body{
+body {
     display: flex;
     flex-direction: column;
     background-color: chocolate;
+
+
+
 }
 
-.principal{
+.principal {
     display: flex;
-    flex-direction: column;
-    
+    align-items: center;
+    justify-content: space-evenly;
+
+
 }
 
-.contenedor{
-    width: 100vh;
-    height: 100vh;
+.contenedor1 {
     display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
-    grid-template-rows: 20% 20% 20% 20% 20%;
+    width: 200px;
+    max-width: 200px;
+    height: 220px;
+    max-height: 220px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 3fr 1fr;
+
 }
+
+.caja0 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    background-color: rgb(244, 248, 248);
+    border: solid 10px black;
+    
+
+
+}
+
+
+
+#foto {
+    
+    
+  float: left;
+  width: 200px;
+  height: 200px;
+}
+
+img{
+    float: left;
+  width: 152px;
+  height: 142.500px;
+}
+
+
+.boton:hover {
+    background: #6aa08e;
+}
+
+.boton {
+    background-color: black;
+    color: brown;
+    font-size: larger;
+}
+
+.contenedor {
+    width: 800px;
+    max-width: 800px;
+    height: 600px;
+    max-height: 600px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    background-color: black;
+    border: solid 10px black;
+}
+
+.contenedor div {
+    background-color: rgb(244, 248, 248);
+}
+
 .caja1 {
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 1;
     grid-row-end: 2;
 }
+
 .caja2 {
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 1;
     grid-row-end: 2;
 }
+
 .caja3 {
     grid-column-start: 3;
     grid-column-end: 4;
     grid-row-start: 1;
     grid-row-end: 2;
 }
+
 .caja4 {
     grid-column-start: 4;
     grid-column-end: 5;
     grid-row-start: 1;
     grid-row-end: 2;
 }
+
 .caja5 {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 2;
-    grid-row-end: 3;
+    grid-column-start: 5;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 2;
 }
+
 .caja6 {
-    grid-column-start: 2;
-    grid-column-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 2;
     grid-row-start: 2;
     grid-row-end: 3;
 }
+
 .caja7 {
-    grid-column-start: 3;
-    grid-column-end: 4;
+    grid-column-start: 2;
+    grid-column-end: 3;
     grid-row-start: 2;
     grid-row-end: 3;
 }
+
 .caja8 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.caja9 {
     grid-column-start: 4;
     grid-column-end: 5;
     grid-row-start: 2;
     grid-row-end: 3;
 }
-.caja9 {
+
+.caja10 {
+    grid-column-start: 5;
+    grid-column-end: 6;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.caja11 {
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 3;
     grid-row-end: 4;
 }
-.caja10 {
+
+.caja12 {
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 3;
     grid-row-end: 4;
 }
-.caja11 {
+
+.caja13 {
     grid-column-start: 3;
     grid-column-end: 4;
     grid-row-start: 3;
     grid-row-end: 4;
 }
-.caja12 {
+
+.caja14 {
     grid-column-start: 4;
     grid-column-end: 5;
     grid-row-start: 3;
     grid-row-end: 4;
 }
-.caja13 {
+
+.caja15 {
+    grid-column-start: 5;
+    grid-column-end: 6;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+.caja16 {
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 4;
     grid-row-end: 5;
 }
-.caja14 {
+
+.caja17 {
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 4;
     grid-row-end: 5;
 }
-.caja15 {
+
+.caja18 {
     grid-column-start: 3;
     grid-column-end: 4;
     grid-row-start: 4;
     grid-row-end: 5;
 }
-.caja16 {
+
+.caja19 {
     grid-column-start: 4;
     grid-column-end: 5;
     grid-row-start: 4;
     grid-row-end: 5;
 }
 
-.caja17 {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 5;
-    grid-row-end: 6;
-}
-.caja18 {
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 5;
-    grid-row-end: 6;
-}
-.caja19 {
-    grid-column-start: 3;
-    grid-column-end: 4;
-    grid-row-start: 5;
-    grid-row-end: 6;
-}
 .caja20 {
-    grid-column-start: 4;
-    grid-column-end: 5;
-    grid-row-start: 5;
-    grid-row-end: 6;
+    grid-column-start: 5;
+    grid-column-end: 6;
+    grid-row-start: 4;
+    grid-row-end: 5;
 }
