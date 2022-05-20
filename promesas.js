@@ -18,17 +18,41 @@ function sacar(json) {
             key = localStorage.key(i);
             razasl = localStorage.getItem(key).split("/")[4]
             if (razas != razasl) {
-                if(cont<20){
-                document.getElementById("foto" + cont1).src = a
+                if (cont < 20) {
+                    document.getElementById("foto" + cont1).src = a
                 }
-            }else{console.log(razas)}
+            } else { console.log(razas) }
         }
     }
     cont1++
     localStorage.setItem(`perro${cont}`, a)
     cont++
+    for (let i = 0; i < localStorage.length; i++) {
+        key = localStorage.key(i);
+        razasl = localStorage.getItem(key).split("/")[4]
+    
+    var labels = [];
+
+  const data = {
+    labels: labels,
+    datasets: [{
+      label: 'Perret',
+      backgroundColor: 'rgb(255, 99, 132)',
+      borderColor: 'rgb(255, 99, 132)',
+      data: [0, 10, 5, 2, 20, 30, 45],
+    }]
+  };
+
+  const config = {
+    type: 'bar',
+    data: data,
+    options: {}
+  };
+
+
+  const myChart = new Chart(
+    document.getElementById('myChart'),
+    config
+  );
 }
-
-
-
 
