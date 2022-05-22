@@ -1,66 +1,4 @@
-/*var cont = 0
-var cont1 = 1
-function buscar() {
-    fetch("https://dog.ceo/api/breeds/image/random")
-        .then(res => res.json())
-        .then(json => sacar(json))
-}
-function sacar(json) {
-    let a = json.message
-    let key;
-    var razasl
-    var razas = json.message.split("/")[4]
-    document.getElementById("foto").src = a
-    if (localStorage.length == 0) {
-        document.getElementById("foto" + cont1).src = a
-    } else {
-        for (let i = 0; i < localStorage.length; i++) {
-            key = localStorage.key(i);
-            razasl = localStorage.getItem(key).split("/")[4]
-            if (razas != razasl) {
-                if (cont < 20) {
-                    document.getElementById("foto" + cont1).src = a
-                }
-            } else { console.log(razas) }
-        }
-    }
-    cont1++
-    localStorage.setItem(`perro${cont}`, a)
-    cont++
 
-
-
-
-
-
-
-
-   
-    var labels = [];
-
-  const data = {
-    labels: labels,
-    datasets: [{
-      label: 'Perret',
-      backgroundColor: 'rgb(255, 99, 132)',
-      borderColor: 'rgb(255, 99, 132)',
-      data: [0, 10, 5, 2, 20, 30, 45],
-    }]
-  };
-
-  const config = {
-    type: 'bar',
-    data: data,
-    options: {}
-  };
-
-
-  const myChart = new Chart(
-    document.getElementById('myChart'),
-    config
-  );
-}
-}*/
 var perro = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
 
 var cont1 = 1;
@@ -158,7 +96,7 @@ function sacar(json) {
 
             for (let j = 1; j < arrayDePerros.length; j++) {
                 if (arrayDePerros[0].razas == arrayDePerros[arrayDePerros.length - j].razas) {
-                    if (j < 20) {
+                    if (j <= 20) {
                         perro[j-1] += 1
                     }
                 }
