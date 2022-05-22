@@ -1,6 +1,5 @@
 
 var perro = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
-
 var cont1 = 1;
 var cont2 = 0
 var perros
@@ -82,7 +81,13 @@ function sacar(json) {
 
 
 
-
+   for (let j = 1; j < arrayDePerros.length; j++) {
+                if (arrayDePerros[0].razas == arrayDePerros[arrayDePerros.length - j].razas) {
+                    if (j <= 20) {
+                        perro[j-1] += 1
+                    }
+                }
+            }
 
             const data = {
                 labels: labels,
@@ -94,13 +99,7 @@ function sacar(json) {
                 }]
             }
 
-            for (let j = 1; j < arrayDePerros.length; j++) {
-                if (arrayDePerros[0].razas == arrayDePerros[arrayDePerros.length - j].razas) {
-                    if (j <= 20) {
-                        perro[j-1] += 1
-                    }
-                }
-            }
+         
 
 
 
