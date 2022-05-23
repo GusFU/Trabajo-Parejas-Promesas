@@ -40,11 +40,7 @@ body {
 
 }
 
-
-
-#foto {
-    
-    
+#foto {   
   float: left;
   width: 200px;
   height: 200px;
@@ -55,7 +51,6 @@ img{
   width: 152px;
   height: 142.500px;
 }
-
 
 .boton:hover {
     background: #6aa08e;
@@ -223,6 +218,7 @@ img{
     grid-row-start: 4;
     grid-row-end: 5;
 }
+
 .grafica{
     width: 800px;
     height: 400px; 
